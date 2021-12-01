@@ -6,7 +6,8 @@ import org.springframework.stereotype.Repository;
 import com.pxp.employeedatabase.entity.EmployeeEntity;
 
 @Repository
-public interface EmployeeRepository extends JpaRepository<EmployeeEntity, Integer> {
+public interface
+EmployeeRepository extends JpaRepository<EmployeeEntity, Integer> {
 
 	public boolean existsByFirstNameAndLastName(String firstName,  String lastName);
 	
